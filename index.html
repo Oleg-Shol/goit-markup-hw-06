@@ -71,17 +71,26 @@
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="close-button" type="button" data-modal-close>
-            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="15" cy="15" r="15" fill="#fff" />
-              <circle cx="15" cy="15" r="14.5" stroke="#000" stroke-opacity=".1" />
-              <path
-                  d="M21 10.108L19.892 9 15.5 13.392 11.108 9 10 10.108l4.392 4.392L10 18.892 11.108 20l4.392-4.392L19.892 20 21 18.892 16.608 14.5 21 10.108z"
-                  fill="#000" />
-          </svg>
-          </svg>
+            <div class="close-cover">
+              <svg class="close-x"><use href="./Images/svg-icons/symbol-defs.svg#icon-close"</svg>
+            </div>
           </button>
+          <p class="modal-text">Leave your details and we'll call you back</p>
+
+          <form action="" class="fill-in">
+           <div>
+            <label for="user-name" class="label-text">Name</label>
+            <div class="input-position">
+              <input class="input-box" id="user-name" type="text" name="user-name" placeholder=" ">
+              <svg class="field">
+                <use href="./Images/svg-icons/symbol-defs.svg#icon-person">
+                </use>
+            </svg>
+            </div>
+           </div>
+          </form>
+
         </div>
-        
       </div>
 
       <!-- Features -->
@@ -453,6 +462,20 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <div class="submit">
+          <p>Subscribe to the newsletter</p>
+          <form class="submit-wrap">
+            <input type="email" name="email" placeholder="E-mail" class="submit-input" />
+
+            <button type="submit" class="button sub-button">
+              Subscribe
+              <svg class="send-btn" width="24px" height="24px">
+                <use href="./Images/svg-icons/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
