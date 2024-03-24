@@ -77,19 +77,73 @@
           </button>
           <p class="modal-text">Leave your details and we'll call you back</p>
 
-          <form action="" class="fill-in">
-           <div>
-            <label for="user-name" class="label-text">Name</label>
-            <div class="input-position">
-              <input class="input-box" id="user-name" type="text" name="user-name" placeholder=" ">
-              <svg class="field">
-                <use href="./Images/svg-icons/symbol-defs.svg#icon-person">
-                </use>
-            </svg>
+          <form class="fill-in">
+            <div>
+              <label for="user-name" class="label-text">Name</label>
+              <div class="input-position">
+                <input
+                  class="input-box"
+                  id="user-name"
+                  type="text"
+                  name="user-name"
+                  placeholder=" "
+                />
+                <svg class="field">
+                  <use href="./Images/svg-icons/symbol-defs.svg#icon-person"></use>
+                </svg>
+              </div>
             </div>
-           </div>
-          </form>
 
+            <div>
+              <label for="user-tel" class="label-text">Phone</label>
+              <div class="input-position">
+                <input class="input-box" id="user-tel" type="tel" name="user-tel" placeholder=" " />
+                <svg class="field">
+                  <use href="./Images/svg-icons/symbol-defs.svg#icon-phone2"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div>
+              <label for="user-name" class="label-text">Name</label>
+              <div class="input-position">
+                <input
+                  class="input-box"
+                  id="user-mail"
+                  type="email"
+                  name="user-email"
+                  placeholder=" "
+                />
+                <svg class="field">
+                  <use href="./Images/svg-icons/symbol-defs.svg#icon-mail2"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div>
+              <label class="label-text" for="comments">
+                Comments
+                <textarea
+                  class="txtarea"
+                  name="feedback"
+                  cols="60"
+                  rows="6"
+                  placeholder="Enter text here..."
+                ></textarea>
+              </label>
+            </div>
+
+            <div class="acception">
+              <label class="act-lbl" for="acception">
+                <input class="chk-box" id="acception" type="checkbox" />
+                <span class="chk-icon"></span>
+                I accept the newsletter and accept
+                <a class="hyperlink" href=""> Conditions of contract</a>
+              </label>
+            </div>
+
+            <button class="button modal-btn" type="submit">Send</button>
+          </form>
         </div>
       </div>
 
